@@ -38,7 +38,7 @@ A source is one of:
 | network folder | `http://192.168.1.10:8000/pkgs/` | anything serving a directory index |
 | console folder | `/data/pkgs`, a mounted USB stick | scanned directly |
 
-For the network kind, the simplest route is [PKG Share](../ps5-pkg-share), a small Windows
+For the network kind, the simplest route is [PKG Share](https://github.com/tsuramatsu1/pkg-share), a small Windows
 app that serves a folder — local or a `\\host\share` path — and copies the address to paste
 in here. `python -m http.server 8000` inside your packages folder does the same job.
 nginx `autoindex` and Apache listings work too — the index is read for any `href` ending in
@@ -83,6 +83,6 @@ source. It works two ways:
 - **On the console**, from `/` — easier than remembering where a USB stick mounts.
 - **On a PC**, by walking a listing that PC serves. The console has no access to a PC's
   disk at all, so this only works for a folder the PC is serving: run
-  [PKG Share](../ps5-pkg-share), add the address it gives you, then Browse from there.
+  [PKG Share](https://github.com/tsuramatsu1/pkg-share), add the address it gives you, then Browse from there.
   Sub-folders are walkable, so one shared folder covers a whole tree.
 
