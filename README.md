@@ -86,12 +86,3 @@ source. It works two ways:
   [PKG Share](../ps5-pkg-share), add the address it gives you, then Browse from there.
   Sub-folders are walkable, so one shared folder covers a whole tree.
 
-## Credits
-
-The PS5 install path — that `sceBgftServiceInt*` is gone and
-`sceAppInstUtilInstallByPackage` replaces it — was worked out by
-[etaHEN](https://github.com/etaHEN/etaHEN) and by
-[cy33hc/ps5-ezremote-dpi](https://github.com/cy33hc/ps5-ezremote-dpi). The directory shape
-that publishes a tile follows the `install_app` sample in the
-[ps5-payload-sdk](https://github.com/ps5-payload-dev/sdk) and GFS Downloader's use of it.
-This code is written from those published findings rather than derived from them.
